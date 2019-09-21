@@ -1,0 +1,122 @@
+
+.navbar-heads{
+    color: solid black;
+    padding: 10px;
+    background-color: rgb(175, 173, 69);
+}
+#savage_menu1{
+    float: right;
+}
+#move{
+    float: right;  
+}
+#con{
+    height: 20px;
+    width: 20px;
+}
+#slide{
+    background-color: black;
+}
+#cart{
+    height: 80px;
+    padding: 25px 10px 30px 10px;
+    border-top: 1px  solid yellow;
+    margin: 0em 2.25em 0em 2.24em;
+}
+ul li a{
+    border-radius: 4px;
+    text-align: right;
+}
+#carousel{
+    width: 400px;
+    height: 430px;
+    float: right;
+}
+#head{
+    position: absolute;
+    top: 250px;
+    left: 225px;
+    color: white;
+    background-color: black;
+    font-size: 24px;
+}
+#store{
+    width: 9em;
+    color: white;
+}
+#all{
+    color: white;
+    background-color: black;
+    margin-top: 0em;
+    width: 9em;
+}
+#show{
+    position: absolute;
+    top: 350px;
+    left: 225px;
+    color: white;
+    background-color: rgb(121, 122, 207);
+    height: 40px;
+    padding: 10px;
+    border-radius: 30px; 
+}
+#show2{
+    color: white;
+    background-color: rgb(121, 122, 207);
+    height: 40px;
+    padding: 10px;
+    border-radius: 30px;
+}
+#new{
+    position: absolute;
+    top: 270px;
+    left: 225px;
+    color: white;
+}
+#img{
+    width: 200px;
+    height: 300px;
+}
+#img1{
+    height: 50px;
+    width: 110px;
+    position: relative;
+    top: -16px;
+}
+#img2{
+    width: 200px;
+    height: 250px;
+}
+#img3{
+    width: 26px;
+    height: 25px;
+    border: 1px solid black;
+}
+p{
+    background-color: white;
+}
+.row{
+    padding: 50px 0px 50px 0px; 
+    color: white;
+}
+p span{
+    color: white;
+    background-color: black;
+    padding: 3.5px 2px 6px 2px;
+    margin: 0em 0.5em 0em 0.5em;
+}
+#more{
+    color: white;
+    width: 7em;
+    border-radius: 30px;
+    border: 2px solid white;
+    padding: 20px;
+    text-align: center;
+}
+#foot{
+    height: 30px;
+    width: 30px;
+}
+footer{
+    margin: 0em 0em 1em 0em;
+}
