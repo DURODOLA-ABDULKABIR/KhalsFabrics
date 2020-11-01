@@ -1,18 +1,40 @@
-
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: carolas;
+}
 .navbar-heads{
+    top: 0.4px;
+    position: fixed;
     color: solid black;
     padding: 10px;
-    background-color: rgb(175, 173, 69);
+    background-color: rgb(116, 114, 48);
+    width: 100%;
+    z-index: 100;
+    border: 0;
 }
 #savage_menu1{
     float: right;
+ }
+
+ #navigation a {
+     color: black;
+     font-size: 1.2em;
+ }
+
+ #navigation a:hover, 
+ #navigation a:active{
+     color: white;
+ }
+
+#icon{
+    height: 35px;
+    width: 35px;
+    padding: 4px 5px 4px 5px;
 }
-#move{
-    float: right;  
-}
-#con{
-    height: 20px;
-    width: 20px;
+#icon:hover{
+    height: 50px;
+    width: 50px;
 }
 #slide{
     background-color: black;
@@ -21,7 +43,9 @@
     height: 80px;
     padding: 25px 10px 30px 10px;
     border-top: 1px  solid yellow;
-    margin: 0em 2.25em 0em 2.24em;
+    margin: 0em 2.25em 0em 2.1em;
+    border-radius: 5px;
+    width: 78%;
 }
 ul li a{
     border-radius: 4px;
@@ -32,47 +56,54 @@ ul li a{
     height: 430px;
     float: right;
 }
-#head{
-    position: absolute;
-    top: 250px;
-    left: 225px;
-    color: white;
-    background-color: black;
-    font-size: 24px;
-}
+
 #store{
+    text-align: left;
     width: 9em;
     color: white;
 }
-#all{
-    color: white;
-    background-color: black;
-    margin-top: 0em;
-    width: 9em;
+
+.wrapper a{
+    font-size: 20px;
 }
-#show{
+
+.wrapper li{
+    list-style: none;
+    text-align: left; 
+    width: 15em;
+}
+
+.ads {
     position: absolute;
-    top: 350px;
-    left: 225px;
-    color: white;
-    background-color: rgb(121, 122, 207);
-    height: 40px;
-    padding: 10px;
-    border-radius: 30px; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    background: transparent;
+    top: 200px;
+    left: 150px;
 }
-#show2{
+.head {
+    color: white;
+    font-size: 24px;
+    font-family: "sacramento";
+}
+.head, .new{
+    text-shadow: 2px 2px black;
+    color: white;
+    background: transparent;
+}
+
+
+#show, .show-now {
     color: white;
     background-color: rgb(121, 122, 207);
     height: 40px;
-    padding: 10px;
+    padding: 13px;
     border-radius: 30px;
 }
-#new{
-    position: absolute;
-    top: 270px;
-    left: 225px;
-    color: white;
-}
+
+
 #img{
     width: 200px;
     height: 300px;
@@ -86,16 +117,20 @@ ul li a{
 #img2{
     width: 200px;
     height: 250px;
+    border-radius: 5px;
 }
 #img3{
     width: 26px;
     height: 25px;
     border: 1px solid black;
 }
+.item img{
+    border-radius: 60px;
+}
 p{
     background-color: white;
 }
-.row{
+.footer-content, .row{
     padding: 50px 0px 50px 0px; 
     color: white;
 }
@@ -105,6 +140,16 @@ p span{
     padding: 3.5px 2px 6px 2px;
     margin: 0em 0.5em 0em 0.5em;
 }
+
+#load-more{
+    font-size: 18px;
+    text-align: center;
+}
+
+#products{
+    text-align: center;
+}
+
 #more{
     color: white;
     width: 7em;
@@ -113,10 +158,113 @@ p span{
     padding: 20px;
     text-align: center;
 }
-#foot{
-    height: 30px;
-    width: 30px;
+.foot img{
+    height: 40px;
+    width: 40px;
+    padding: 2px;
 }
+
 footer{
     margin: 0em 0em 1em 0em;
+    font-size: 16px;
+}
+
+.footer-content{
+    color: black; 
+    text-align: center;
+}
+
+h5{
+    font-size: 20px;
+    color: black;
+}
+
+@media (max-width:1024px){
+    #cart{
+        width: 200px;
+        margin:0px  auto 30px;
+    }
+
+    #img{
+        padding: 30px 0 0 0;
+    }
+}
+
+@media (max-width: 891px){
+    #cart{
+        width: 33%;
+        margin:0px  auto 30px;
+
+    }
+    .ads{
+        margin-left: -120px;
+        width: 300px;
+
+    }
+
+    #move{
+        position: static;
+    }
+
+    #img, #img2{
+        padding: 18px 0 0 0;
+    }
+
+    #social{
+        padding-left: 36px;
+    }
+    
+}
+
+
+@media(max-width:768px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    
+    #social{
+        padding-left: 36px;
+    }
+
+    #cart{
+        width: 200px;
+        margin:0px  auto 30px;
+    }
+}
+@media(max-width:400px){
+    html, body{
+        overflow-x: hidden;
+    }
+
+    .navbar-heads{
+        width: 100%;
+        padding: 10px 3px 10px ;
+    }
+
+    #cart{
+        width: 200px;
+        margin:0px  auto 30px;
+    }
+    #social{
+        padding-left: 36px;
+    }
+
+    .ads{
+        margin-right: 500px;
+        width: 80%;
+    }
+
+    #head, #new{
+        width: 300px;
+    }
+}
+
+@media(max-width:280px){
+    .navbar-heads{
+        padding: 10px 0;
+    }
+    #icon{
+        display: none;
+    }
 }
