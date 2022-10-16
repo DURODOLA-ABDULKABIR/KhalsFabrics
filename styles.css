@@ -142,9 +142,11 @@ ul li a{
     height: 25px;
     border: 1px solid black;
 }
+
 .item img{
     border-radius: 60px;
 }
+
 p{
     /* background-color: rgb(117, 251, 253); */
     background-color: rgb(241, 157, 201);
